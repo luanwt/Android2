@@ -4,7 +4,10 @@ import { useNavigation } from '@react-navigation/native';
 import Footer from './Footer';
 
 export default function Cart({ route }) {
-
+  if (!route || !route.name) {
+    // Xử lý khi `router` không tồn tại hoặc không có thuộc tính 'name'
+    return null; // hoặc có thể trả về giá trị mặc định khác
+}
   //   const { name, url, price, specification } = route.params;
   const navigation = useNavigation()
   const { name, url, price1, quantity } = route.params;
@@ -52,7 +55,8 @@ export default function Cart({ route }) {
         <Text style={{
           color: 'red',
         }}
-        >Buy</Text>
+        >Order
+        </Text>
         </TouchableOpacity>
       </TouchableOpacity>
     </View>

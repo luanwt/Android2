@@ -6,6 +6,7 @@ import HomeScreen from './component/HomeScreen';
 import Content from './component/Content';
 import Detail from './component/ProductDetail';
 import Login from './component/Login';
+import Setting from './component/Setting';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ const Stack = createNativeStackNavigator();
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Detail" component={Detail}/>
         <Stack.Screen name="Content" component={Content}/>
+        <Stack.Screen name="Settings" component={Setting}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

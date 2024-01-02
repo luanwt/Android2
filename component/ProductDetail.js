@@ -15,6 +15,7 @@ export default function Detail({ route }) {
   const decreaseQuantity = () => {
     setQuantity(Math.max(1, quantity - 1));
   };
+  
 
   return (
     <>
@@ -23,6 +24,7 @@ export default function Detail({ route }) {
         <Image source={{ uri: url }} style={{ height: 200, width: '100%', resizeMode: 'center' }} />
         <Text style={{marginLeft:20}}>Name: {name}</Text>
         <Text style={{marginLeft:20}}>Price: ${price*quantity}</Text>
+        
         <View style={{ flexDirection: 'row', alignItems: 'center',marginLeft:20 }}>
           <TouchableOpacity onPress={decreaseQuantity}>
             <Text style={{ color: 'blue' }}>-</Text>

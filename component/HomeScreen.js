@@ -15,11 +15,11 @@ export default function HomeScreen() {
 
 
         <View style={styles.container}>
-            <Header/>
-       
-                <Content/>
-        
-            <Footer/>
+            <Header />
+            <View>
+                <Content />
+            </View>
+            <Footer />
         </View>
     );
 

@@ -11,10 +11,9 @@ export default function Header() {
                 <Image style={styles.logo} source={require('../assets/img/1.png')} className=" h-9 w-9 rounded-full" size="5" />
                 </TouchableOpacity>
                 <SafeAreaView style={styles.Headers}>
-                    <View style={styles.find2} >
-                        <TextInput placeholder='Searcha' style={styles.find1} >
+                    <View style={styles.find2}>
+                        <TextInput placeholder='Search' style={styles.find1} >
                         </TextInput>
-
                         <TouchableOpacity>
                             <AntDesign name="search1" size={24} color="black" />
                         </TouchableOpacity>
@@ -24,28 +23,27 @@ export default function Header() {
                     </TouchableOpacity>
                 </SafeAreaView>
             </View>
-            <TouchableOpacity className="1" flexDirection="row">
+            <TouchableOpacity className="1" >
                 <Ionicons name="location" size={24} color="black" />
                 <Text>120/7 Tang Nhon Phu Q,Tp.HCM</Text>
             </TouchableOpacity>
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     Headers: {
         flex: 1,
         flexDirection: "row",
-        paddingTop: 10,
+        paddingTop: 0,
         justifyContent: "space-between",
         alignItems: "center",
+        maxHeight:50
     },
     background: {
         backgroundColor: "lightgreen",
         paddingTop: 0,
         flex: 1,
-        maxHeight:150,
-        minHeight:100,
+        maxHeight:100,
     },
     logo: {
         width: 50,
