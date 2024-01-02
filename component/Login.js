@@ -91,16 +91,17 @@ export default function Login() {
                     onChangeText={handleInputChange}
                     placeholder="Enter username" 
                     id="username"
-                // value={"vui long nhap"}
+              
                 />
                 <Text>Mat khau</Text>
                 <TextInput
                     style={{ height: 30, borderColor: 'gray', borderWidth: 1, marginHorizontal: 5 }} 
                     value={inputValue2}
+                    secureTextEntry={true}
                     onChangeText={handleInputChange2}
                     placeholder="Enter password" 
                     id="password"
-                // value={"vui long nhap"}
+                
                 />
                 <TouchableOpacity style={styles.button} 
                 onPress={() => {

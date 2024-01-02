@@ -59,7 +59,8 @@ export default function Content() {
                             ${item.price}
                         </Text>
                         <TouchableOpacity onPress={() => { console.log("moi click nha") }}>
-                            <AntDesign name="shoppingcart" size={24} color="red" style={{ marginLeft: 60, marginTop: 10, }} onPress={() => navigation.navigate("Cart", {
+                            <AntDesign name="shoppingcart" size={24} color="red" style={{ marginLeft: 60, marginTop: 10, }} onPress={() => navigation.navigate("Cart", 
+                            {
                                 name: item.title,
                                 url: item.image,
                                 price1: item.price,
