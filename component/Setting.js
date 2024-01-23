@@ -13,14 +13,25 @@ export default function Setting() {
         <View style={styles.container}>
             <Header />
             <View style={styles.container} >
-            <Text>Setting</Text>
-            <TouchableOpacity>
-                <Text>Tai khoan & mat khau</Text>
-                <Text>Dia chi</Text>
-                <Text>Tai khoan/ The ngan hang</Text>
-                <Text></Text>
-                <Text>Cai dat thong bao</Text>
-            </TouchableOpacity>
+
+                <View style={styles.khung}><Text>Tai khoan</Text></View>
+                <TouchableOpacity><Text>_Tai khoan & mat khau</Text>
+                </TouchableOpacity> 
+                <TouchableOpacity><Text>_Dia chi</Text>
+                </TouchableOpacity> 
+                <TouchableOpacity><Text>_Tai khoan/ The ngan hang</Text></TouchableOpacity> 
+                <View style={styles.khung}><Text>Cai dat</Text></View>
+                <TouchableOpacity><Text>_Cai dat rieng tu</Text></TouchableOpacity> 
+                <TouchableOpacity><Text>_Cai dat thong bao</Text></TouchableOpacity> 
+                <TouchableOpacity><Text>_Cai dat ngon ngu</Text></TouchableOpacity> 
+                <TouchableOpacity><Text>_Trung tam ho tro</Text></TouchableOpacity> 
+                <View style={styles.khung}><Text>Ho tro</Text></View>
+                <TouchableOpacity><Text>_Dieu khoan nguoi dung</Text></TouchableOpacity> 
+                <TouchableOpacity><Text>_Gioi Thieu</Text></TouchableOpacity> 
+         
+                <TouchableOpacity><Text>_Yeu cau xoa tai khoan</Text></TouchableOpacity>
+                
+
             </View>
         
             <Footer/>
@@ -32,13 +43,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 3,
     },
-    button: {
-        backgroundColor: "red",
-        marginHorizontal: 130,
-        alignItems: "center",
-        marginLeft: 120,
-        borderWidth: 2,
-        borderRadius: 10,
-        height: 30,
+    khung: {
+        backgroundColor: "#CCCCCC"
     }
 });

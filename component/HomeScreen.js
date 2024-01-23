@@ -14,12 +14,13 @@ export default function HomeScreen() {
     return (
 
 
-        <View style={styles.container}>
-            <Header />
-            <View>
-                <Content />
-            </View>
-            <Footer />
+        <View style={styles.container}>         
+          <Header/>
+                <View style={styles.side}>  
+                 <Content/>
+                </View>
+               <Footer/>
+               
         </View>
     );
 
@@ -28,4 +29,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 3,
     },
+    side:{
+        height:600  
+    },
+   
 });

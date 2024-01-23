@@ -7,9 +7,9 @@ import Content from './component/Content';
 import Detail from './component/ProductDetail';
 import Login from './component/Login';
 import Setting from './component/Setting';
-
+import Register from './component/Register';
+import Profile from './component/Profile';
 const Stack = createNativeStackNavigator();
-
  export default function App(){
   return (
     <NavigationContainer>
@@ -17,6 +17,8 @@ const Stack = createNativeStackNavigator();
         <Stack.Screen  name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="Cart" component={Cart} />
         <Stack.Screen name="Login" component={Login}/>
+        <Stack.Screen name="Register" component={Register}/>
+        <Stack.Screen name="Profile" component={Profile}/>
         <Stack.Screen name="Detail" component={Detail}/>
         <Stack.Screen name="Content" component={Content}/>
         <Stack.Screen name="Settings" component={Setting}/>
