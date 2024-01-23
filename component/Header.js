@@ -10,7 +10,7 @@ export default function Header() {
 
     const [sreachItem, setsreachItem] = useState("");
     const getApi = ()=>{
-        return fetch('http://192.168.1.24:8080/api/products')
+        return fetch('hhttp://10.17.1.167:8080/api/products')
         .then((response)=>response.json())
         .then((data)=>setProducts(data))
         .catch(err=>console.log(err))

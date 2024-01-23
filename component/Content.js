@@ -39,7 +39,7 @@ export default function Content() {
     const navigation = useNavigation()
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://192.168.1.24:8080/api/products')
+        fetch('http://10.17.1.167:8080/api/products')
             .then(res => res.json())
             .then(json => setProducts(json))
     }, []);

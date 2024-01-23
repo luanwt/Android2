@@ -66,7 +66,7 @@ export default function Login() {
 
     const [users, setUser] = useState([]);
     useEffect(() => {
-        fetch('http://192.168.1.24:8080/api/users')
+        fetch('http://10.17.1.167:8080/api/users')
             .then(res => res.json())
             .then(json => setUser(json))
     }, []);
@@ -104,10 +104,11 @@ export default function Login() {
                                     console.log("da dang nhap thanh cong")
                                     saveData(users[i])
                                     bool2=false
-                                    // navigation.navigate("HomeScreen")
+                                    navigation.navigate("HomeScreen")
                                 }
                                 else{
                                     console.log("khong dang nhap duoc vi da co tai khoan")
+                                    alert("Vui lòng đăng xuất khỏi tài khoản hiện tại để đăng nhập tài khoản khác")
                                 }
                                 // saveData(users[i]) 
                             }
@@ -128,14 +129,13 @@ export default function Login() {
                 </TouchableOpacity>
                 </View>
 
-                {/* <TouchableOpacity onPress={() =>getData()}>
+                <TouchableOpacity onPress={() =>getData()}>
                     <Text>Show </Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() =>checkData()}>
                     <Text>Check </Text>
-                </TouchableOpacity> */}
+                </TouchableOpacity>
             </View>
-          
             {/*        
             <FlatList
                           scrollEnabled={false}
@@ -159,8 +159,7 @@ export default function Login() {
                                         </TouchableOpacity>
                                 </View>    
                             }/> */}
-     <Footer/>
-            
+     <Footer/> 
         </View>
         </ImageBackground>
   
